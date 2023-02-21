@@ -1,0 +1,556 @@
+/* NAVBAR ESPECÍFICO */
+nav {
+  background-color: transparent;
+  position: absolute;
+}
+
+.imgAccount {
+  width: 40px;
+}
+
+.opciones--nav__principal {
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.opciones--opcion {
+  color: black;
+}
+
+.opciones--opcion:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* SECCION HOLA */
+h1 {
+  font-size: 8vw;
+}
+
+.hola h1 {
+  color: black;
+}
+
+@media(max-width:715px) {
+  .hola {
+    flex-direction: column;
+    background-position: center;
+    position: relative;
+  }
+
+  .hola--izquierda {
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .hola--derecha {
+    padding-top: 0;
+  }
+}
+
+.hola {
+  display: flex;
+  justify-content: space-between;
+  padding: 12% 5%;
+  height: 100vh;
+  width: 100vw;
+  background: url(../imgs/bicicleta.gif);
+  /* background fits the container */
+  background-size: cover;
+  background-position: right;
+}
+
+.odometer {
+  position: relative;
+  top: -3px;
+}
+
+@media(max-width:500px) {
+  .hola {
+    background: url(../imgs/bicicletaMovil.gif);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
+.hola--izquierda {
+  position: relative;
+  top: -3vw;
+}
+
+.hola--derecha {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  gap: 20px;
+}
+
+.hola--derecha>ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CLASIFICACIÓN SEMANAL */
+
+.clasificacion {
+  color: white;
+  background-color: black;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.clasificacion h1,
+.canjear h1 {
+
+  background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.tableProfile {
+  width: 50px;
+  border-radius: 100%;
+}
+
+.ranking {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player:hover {
+  background-color: rgb(148, 148, 148);
+}
+
+.position {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+  border-radius: 5px;
+  width: 45px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-right: 25px;
+}
+
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.player-info {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.player-name {
+  width: 150px;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.player-title {
+  font-size: 1rem;
+  margin: 0;
+  opacity: 0.7;
+  text-align: center;
+  justify-content: baseline;
+}
+
+.score {
+  background-color: #f8ff1f;
+  width: 100px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .clasificacion {
+    padding: 10% 0%;
+  }
+
+  .clasificacion h1 {
+    margin-left: 5%;
+    padding: 10% 0%;
+  }
+
+  .ranking {
+    padding: 20px 10px;
+  }
+
+  .player {
+    margin-bottom: 20px;
+  }
+
+  .player-info {
+    justify-content: space-around;
+  }
+
+  .player-name {
+    width: 100px;
+    text-align: center;
+  }
+
+  .position {
+    font-size: 1.5rem;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .player-title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100px;
+  }
+
+  .score {
+    display: none;
+  }
+
+}
+
+.reglas {
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 239, 120, 0.728);
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 5%;
+
+}
+
+.reglas a {
+  color: black;
+}
+
+.reglas ul {
+  list-style: none;
+}
+/* Sección amigos */
+.amigos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+}
+.contenedoresAmigos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.contenedor--amigos {
+  border: 1px solid black;
+  width: 40%;
+  height: 500px;
+  border-radius: 5px;
+  overflow: scroll;
+}
+
+.menuAmigos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.iconoAmigos {
+  cursor: pointer;
+  transition: all .5s;
+}
+.iconoAmigos:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+@media(max-width: 768px) {
+  .contenedoresAmigos {
+    flex-direction: column;
+  }
+
+  .contenedor--amigos {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .iconoAmigos {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* Sección canjear */
+
+.canjear {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+  background-color: black;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.fist-words,
+.last-words {
+  padding: 5px;
+}
+
+.first-words,
+.last-words {
+  text-decoration: none;
+}
+
+.title-table {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  height: 160px;
+  height: 320px;
+  overflow-y: scroll;
+}
+
+.userCard {
+  width: 250px;
+  height: 320px;
+}
+
+@media(max-width: 768px) {
+  .userCard {
+    width: 100% !important;
+    height: 220px !important;
+  }
+}
+
+.title-table-left {
+  text-align: right;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.title-table-right {
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.title-table td {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.title-table .first-words {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.title-table .last-words {
+  font-style: italic;
+}
+
+.title-table .selected {
+  background-color: rgb(32, 191, 117);
+  color: white;
+}
+
+.title-table .selected.first-words {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.title-table .selected.last-words {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.contenido--store {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  padding: 5%;
+}
+
+@media(max-width: 768px) {
+  .contenido--store {
+    flex-direction: column;
+  }
+}
+
+.table-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.first-words-container {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.last-words-container {
+  width: 50%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+li {
+  cursor: pointer;
+}
+
+.notificacion {
+  margin: 15px;
+  background-color: rgb(32, 191, 117);
+  color: #333;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.tiempoAmigos {
+  font-size: 15px;
+  font-style: italic;
+
+}
+
+.tiempoReloj {
+  width: 15px;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+  
+}
+
+.reto {
+  background-color: rgb(255, 106, 155);
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.notificacion:hover{
+  transform: scale(1.05);
+  transition: all .5s;
+}
+
+ a {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* ... */
+
+.menu-options {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.menu-options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-options li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-options a {
+  text-decoration: none;
+}
+
+.menu-options li:hover {
+  background-color: #f5f5f5;
+}
+
+.contextualIcon {
+  width: 20px;
+  margin-right: 5px;
+}

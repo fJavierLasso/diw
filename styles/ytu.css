@@ -1,0 +1,72 @@
+/* Sección y tú */
+
+.ytu {
+    flex-direction: column;
+}
+
+.sec--ytu {
+    display: flex;
+    padding: 5% 0;
+    justify-content: space-around;
+    background-color: white;
+}
+
+@media(max-width:900px) {
+
+    .sec--ytu,
+    .sec--consiguelo {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .ytu--evitables {
+        flex-direction: column;
+    }
+}
+
+.ytu--evitables {
+    display: flex;
+}
+
+.ytu>h3 {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+}
+
+.ytu .circleCard--circle {
+    color: white;
+    background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+    border: none;
+}
+
+.ytu--contenido h1 {
+    text-align: center;
+    padding: 5% 0;
+    color: black;
+}
+
+.ytu--contenido form {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5%;
+    font-size: 20px;
+    padding: 5%;
+    padding-top: 6.5%;
+}
+
+.ytu--contenido form input {
+    width: 60px;
+    position: relative;
+    top: -2px;
+    height: 25px;
+    border: 1px solid black;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: 0 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+}

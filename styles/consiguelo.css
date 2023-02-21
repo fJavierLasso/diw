@@ -1,0 +1,117 @@
+/* Sección consíguelo */
+
+.sec--consiguelo {
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5%;
+    padding-top: 10%;
+    background-color: #000000;
+    color: white;
+}
+
+.consiguelo--title {
+    padding-bottom: 20px;
+}
+
+.sec--consiguelo h1 {
+    font-size: 10vw;
+    width: 80vw;
+    background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.sec--consiguelo .abajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.splide {
+    background-color: black;
+}
+
+.registro {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonRegistro {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 100px;
+    background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+}
+
+.buttonRegistro>a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.userCard {
+    width: 22vw;
+    height: 320px;
+    background: linear-gradient(to bottom right, rgb(93, 189, 147), rgb(122, 122, 197), rgb(193, 122, 197));
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .userCard {
+        width: 40vw;
+        height: 260px;
+    }
+}
+
+.userCard--rank {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.userCard img {
+    width: 15vw;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.userCard h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.userCard p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.registrarse {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    border: 1px solid black;
+}
+

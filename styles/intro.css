@@ -1,0 +1,86 @@
+/* Sección introducción */
+nav {
+    position: fixed;
+}
+
+.sec--intro {
+    font-size: 7vw;
+    padding: 50px;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../imgs/imgPortada.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+@media(max-width:900px) {
+
+    .sec--intro {
+        background-position: calc(-10rem);
+    }
+
+}
+
+.sec--intro+nav {
+    color: white;
+}
+
+.sec--estadisticas {
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.circleCard {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.circulosEstadisticas {
+    flex-direction: column;
+}
+
+.circleCard--circle {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 20px;
+}
+
+@media(max-width:900px) {
+
+    .sec--estadisticas {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .circleCard {
+        margin-top: 25px;
+    }
+
+    .circleCard h3 {
+
+        height: 70px;
+        display: flex;
+        align-items: center;
+
+    }
+
+}

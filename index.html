@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Bootrstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- scripts -->
+    <script src="scripts/contadores.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/inicioSesion.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/calculaVida.js" defer></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/baseStyles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/ytu.css">
+    <link rel="stylesheet" href="styles/consiguelo.css">
+
+    <title>#NSP</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="#" class="linkLogo">#NOSEASPACO</a></div>
+            <ul>
+                <li class="has-popup">
+                    <a href="#" class="iniciaSesion">INICIA SESIÓN</a>
+                    <div class="popup">
+                        <form action="principal.html"class="iniciaSesion--formulario">
+                            <!-- Aquí va el contenido del formulario para iniciar sesión -->
+
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="">
+                            <label for="pass">Contraseña:</label>
+                            <input type="password" name="pass" id="">
+                            <input type="submit" value="ENTRAR" class="enviar">
+                        </form>
+                        <a href="registro.html" class="noTienes">¿No tienes cuenta?</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section class="sec--intro">
+        <h1>NOSEASPACO</h1>
+        <!-- add an audio with media controls -->
+        <audio controls>
+            <source src="media/trafico.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+
+    <section class="sec--estadisticas">
+        <div class="circleCard circulosEstadisticas">
+            <div class="circleCard--circle" id="estresEvitadas">432</div>
+            <h3>Horas de 😡 evitadas</h3>
+            <p class="detalle">Con cada viaje que realizas en bici, caminando o utilizando el transporte público en vez
+                del coche, evitas las horas de estrés asociadas con el tráfico, la búsqueda de aparcamiento, el
+                mantenimiento del vehículo, entre otras. Aprovecha ese tiempo para relajarte, leer un libro o
+                simplemente disfrutar del trayecto.</p>
+        </div>
+        <div class="circleCard circulosEstadisticas">
+            <div class="circleCard--circle" id="vidaGanadas">6543</div>
+            <h3>Horas de vida 🏆</h3>
+            <p class="detalle">Cada vez que decides moverte de forma sostenible, estás invirtiendo en tu salud y en tu
+                calidad de vida. Estudios han demostrado que las personas que se desplazan en bici, caminando o en
+                transporte público tienen una mejor salud física y mental, lo que se traduce en <b>años de vida
+                    ganados</b>.</p>
+        </div>
+        <div class="circleCard circulosEstadisticas">
+            <div class="circleCard--circle" id="eurosAhorrados">432</div>
+            <h3>💶 ahorrados</h3>
+            <p class="detalle">Utilizar el coche puede resultar costoso, ya sea por el precio del combustible, el
+                mantenimiento del vehículo o el coste de estacionamiento en la ciudad. Al elegir moverte de forma
+                sostenible, ahorras mucho dinero a largo plazo, lo que se traduce en una mayor estabilidad financiera y
+                más recursos disponibles para invertir en otras áreas importantes de tu vida.</p>
+        </div>
+    </section>
+
+
+    <section class="sec--ytu">
+        <div class="ytu--contenido">
+            <h1>¿Y TÚ?</h1>
+            <form action="" class="recorro">
+                Recorro <input type="text" name="km" id="km"> km al día en 🚙 o 🏍️ por la ciudad.
+            </form>
+            <div class="ytu--evitables">
+                <div class="circleCard ytu">
+                    <div class="circleCard--circle circleInput">0</div>
+                    <h3>Horas de 😡 evitables</h3>
+                </div>
+                <div class="circleCard ytu">
+                    <div class="circleCard--circle circleInput">0</div>
+                    <h3>Horas de vida 🏆</h3>
+                </div>
+                <div class="circleCard ytu">
+                    <div class="circleCard--circle circleInput">0</div>
+                    <h3 class="h3Peque">💶 ahorrables</h3>
+                </div>
+            </div>
+
+        </div>
+        <!-- En algún lado tendré que poner un vídeo... -->
+        <!-- <div class="derecha">
+            <div class="video">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/ZBNcw0W9ytk" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div> -->
+
+        </div>
+    </section>
+
+
+    <section class="sec--consiguelo">
+        <div class="consiguelo--title">
+            <h1>CONSÍGUELO EN COMUNIDAD</h1>
+        </div>
+    </section>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track carousel">
+            <ul class="splide__list">
+                <script>
+                    for (let i = 0; i < 100; i++) {
+                        document.write(`
+                  <li class="splide__slide">
+                    <div class="userCard">
+                        <div class="userCard--rank">#1</div>
+                        <img src="imgs/loading.gif" alt="foto de perfil" class="userCard--profile">
+                        <div class="userCard--data">
+                            <h3>Carganado...</h3>
+                            <p></p>
+                        </div>
+                        
+                    </div>
+                  </li>
+                  `)
+                    }
+                </script>
+
+            </ul>
+        </div>
+    </section>
+    <section class="registrarse">
+        <div class="registro"><button class="buttonRegistro"><a href="registro.html">EMPEZAR</a></button></div>
+    </section>
+
+
+    <footer>
+        <p>NOSEASPACO promueve la movilidad sostenible para mejorar la vida de las personas y la calidad del medio
+            ambiente en las ciudades. Al fomentar el uso de medios de transporte no contaminantes como la bicicleta o el
+            transporte público, estamos contribuyendo a reducir el tráfico, la contaminación y el ruido en las calles,
+            así como a mejorar la salud y el bienestar de la ciudadanía. Juntos, podemos hacer de nuestras ciudades
+            lugares más habitables, amigables y sostenibles para todos.</p>
+        <div class="social">
+            <img src="imgs/instagram.png" alt="" class="social--icon">
+            <img src="imgs/github.png" alt="" class="social--icon">
+            <img src="imgs/twitter.png" alt="" class="social--icon">
+        </div>
+        Copyright © 2023 NOSEASPACO. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

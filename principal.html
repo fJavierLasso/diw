@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- odometer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+        integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles/odometer.css">
+
+    <!-- Bootrstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Splide -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+        defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- scripts -->
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/ranking.js" defer></script>
+    <script src="scripts/numeros.js"></script>
+    <script src="scripts/titulos.js" defer></script>
+    <script src="scripts/contextual.js" defer></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/baseStyles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/principal.css">
+    <link rel="stylesheet" href="styles/consiguelo.css">
+
+    <title>Principal</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="linkLogo">#NOSEASPACO</a></div>
+            <div class="opciones--nav__principal">
+                <a href="#clasificacion" class="opciones--opcion">SOCIAL</a>
+                <a href="#canjear" class="opciones--opcion">TÍTULOS</a>
+                <a href="#"><img src="imgs/account.png" alt="profile" class="imgAccount"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hola">
+        <div class="hola--izquierda">
+            <h1>HOLA, JAVIER</h1>
+            <h3><b>#352</b> en tu ciudad esta semana</h3>
+        </div>
+        <div class="hola--derecha">
+            <ul class="hola--info">
+                <li>
+                    <h2><b class="odometer" id="kms">0</b>Km</h2>
+                </li>
+                <li>
+                    <h2>~<b class="odometer" id="kcal">0</b>Kcal</h2>
+                </li>
+                <li>
+                    <h2>+<b class="odometer" id="vida">0</b>h de vida</h2>
+                </li>
+                <li>
+                    <h2>-<b class="odometer" id="estres">0</b>h de estrés</h2>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="clasificacion" id="clasificacion">
+        <h1>CLASIFICACIÓN SEMANAL</h1>
+
+        <div class="contenidoClasificacion container ">
+            <div class="ranking">
+                <script>
+                    for (let i = 0; i < 99; i++) {
+                        document.write(`
+                        <div class="player">
+                    <span class="position">${i + 1}</span>
+                    <img class="profile-icon" src="imgs/loading.gif" alt="Perfil 1">
+                    <div class="player-info">
+                        <h2 class="player-name">Cargando...</h2>
+                        <p class="player-title">Entusiasta del ajax</p>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                  `)
+                    }
+                </script>
+                <!-- El elemento #menu-options está dentro de la misma jerarquía de elementos que recibe el evento click -->
+                <div id="menu-options" class="menu-options">
+                    <ul>
+                        <li><a href=""><img src="imgs/messenger.png" alt="" class="contextualIcon"> Chat</a></li>
+                        <li><a href=""><img src="imgs/sword.png" alt="" class="contextualIcon">Retar</a></li>
+                        <li><a href=""><img src="imgs/user.png" alt="" class="contextualIcon">Ver perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reglas col">
+                <p>El ranking semanal viene determinado por la cantidad de puntos que han generado otras personas en tu
+                    ciudad
+                    durante la semana. Los puntos se generan por cada viaje que realizas en <b>bicicleta</b>,
+                    <b>andando</b>, en <b>patinete</b> o en <b>transporte público</b>.
+                    Para sumar puntos deberás <a href="#">descargarte la app de <b>#NOSEASPACO</b></a> y registrar tus
+                    viajes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="amigos">
+        <h1>MIS AMIGOS</h1>
+        <div class="contenedoresAmigos">
+            <div class="contenedor--amigos tablon">
+                <div class="notificacion"><b><a href="">Laura</a></b> <i>ha seguido a</i> <a href=""><b>Irene</b></a>
+                    <i>y a</i> <a href=""><b>David</b></a>. <div class="tiempoAmigos"><img src="imgs/clockIcon.png"
+                            alt="" class="tiempoReloj">Hace 5 minutos</div>
+                </div>
+                <div class="notificacion"><b><a href="">Pedro</a></b> <i>ahora es <b>Follower de Santa Claus</b></i>
+                    <div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt="" class="tiempoReloj">Hace 5 minutos
+                    </div>
+                </div>
+                <div class="notificacion reto"><b><a href="">Ana</a></b><i> te ha desafiado a un <b>reto</b>, ¡Qué
+                        osada!</i> 🙅🏻‍♂️🏆🚩<div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt=""
+                            class="tiempoReloj">Hace 5 minutos</div>
+                </div>
+                <div class="notificacion"><b><a href="">Alex</a></b><i> ha ganado a </i><b><a href="">Dani</a></b><i> en
+                        un desafío esta semana. ¡Ouch! </i>😁<div class="tiempoAmigos"><img src="imgs/clockIcon.png"
+                            alt="" class="tiempoReloj">Hace 32 minutos</div>
+                </div>
+                <div class="notificacion"><b><a href="">Pedro</a></b> <i>ahora es <b>Follower de Santa Claus</b></i>
+                    <div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt="" class="tiempoReloj">Hace 2 horas
+                    </div>
+                </div>
+                <div class="notificacion"><b><a href="">Sandra</a></b> <i>ahora es <b>Crack de un universo
+                            alternativo</b></i>
+                    <div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt="" class="tiempoReloj">Hace 3 horas
+                    </div>
+                </div>
+                <div class="notificacion"><b><a href="">Pedro</a></b> <i>ahora es <b>Follower de Santa Claus</b></i>
+                    <div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt="" class="tiempoReloj">Hace 6 horas
+                    </div>
+                </div>
+                <div class="notificacion"><b><a href="">Alejandra</a></b> <i>quiere ser <b>tu amiga</b></i>
+                    <div class="tiempoAmigos"><img src="imgs/clockIcon.png" alt="" class="tiempoReloj">Hace 1 día</div>
+                </div>
+            </div>
+            <div class="contenedor--amigos menuAmigos">
+                <script>
+                    for (let i = 0; i < 14; i++) {
+                        document.write(`<img class="profile-icon iconoAmigos" src="imgs/loading.gif" alt="Perfil 1">`)
+                    }
+                </script>
+
+                <!-- El elemento #menu-options está dentro de la misma jerarquía de elementos que recibe el evento click -->
+                <div id="menu-options" class="menu-options">
+                    <ul>
+                        <li><a href=""><img src="imgs/messenger.png" alt="" class="contextualIcon"> Chat</a></li>
+                        <li><a href=""><img src="imgs/sword.png" alt="" class="contextualIcon">Retar</a></li>
+                        <li><a href=""><img src="imgs/user.png" alt="" class="contextualIcon">Ver perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="canjear" id="canjear">
+        <h1>MIS TÍTULOS</h1>
+        <div class="contenido--store">
+            <div class="table-container">
+                <div class="first-words-container">
+                    <ul class="title-table title-table-left">
+                        <li class="first-words">Master de</li>
+                        <li class="first-words">Crack de</li>
+                        <li class="first-words">Amante de</li>
+                        <li class="first-words">Hater de</li>
+                        <li class="first-words">Demonio de</li>
+                        <li class="first-words">Follower de</li>
+                        <li class="first-words">Grita a</li>
+                        <li class="first-words">Desprecia</li>
+                        <li class="first-words">Ama</li>
+                        <li class="first-words">Reflexiona sobre</li>
+                        <li class="first-words">Su vida:</li>
+                        <li class="first-words">Profesional de</li>
+
+                    </ul>
+                </div>
+
+                <div class="last-words-container">
+                    <ul class="title-table title-table-right">
+                        <li class="last-words">el Parchís</li>
+                        <li class="last-words">las ciruelas</li>
+                        <li class="last-words">los videojuegos</li>
+                        <li class="last-words">Santa Claus</li>
+                        <li class="last-words">Star Wars</li>
+                        <li class="last-words">Link</li>
+                        <li class="last-words">Solo en casa</li>
+                        <li class="last-words">un universo alternativo</li>
+                        <li class="last-words">La casa de papel</li>
+                        <li class="last-words">Robert DeNiro</li>
+                        <li class="last-words">Odisea en el espacio</li>
+                        <li class="last-words">las ratas de laboratorio</li>
+                        <li class="last-words">todas las emociones</li>
+                        <li class="last-words">ninguna emoción</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="userCard">
+                <div class="userCard--rank">#1</div>
+                <img src="imgs/FOTOPERFIL2.jpg" alt="foto de perfil" class="userCard--profile">
+                <div class="userCard--data">
+                    <h3>Javier</h3>
+                    <p>
+                    <div id="title-preview"></div>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>NOSEASPACO promueve la movilidad sostenible para mejorar la vida de las personas y la calidad del medio
+            ambiente en las ciudades. Al fomentar el uso de medios de transporte no contaminantes como la bicicleta o el
+            transporte público, estamos contribuyendo a reducir el tráfico, la contaminación y el ruido en las calles,
+            así como a mejorar la salud y el bienestar de la ciudadanía. Juntos, podemos hacer de nuestras ciudades
+            lugares más habitables, amigables y sostenibles para todos.</p>
+        <div class="social">
+            <img src="imgs/instagram.png" alt="" class="social--icon">
+            <img src="imgs/github.png" alt="" class="social--icon">
+            <img src="imgs/twitter.png" alt="" class="social--icon">
+        </div>
+        Copyright © 2023 NOSEASPACO. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
