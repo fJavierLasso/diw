@@ -4,6 +4,12 @@ nav {
   position: absolute;
 }
 
+@media(max-width: 500px) {
+  .hola--info h2 {
+    font-size:  13vw;
+  }
+}
+
 .imgAccount {
   width: 40px;
 }
