@@ -4,6 +4,10 @@ nav {
   position: absolute;
 }
 
+.linkLogo:hover {
+  color: white;
+}
+
 .imgAccount {
   width: 40px;
 }
